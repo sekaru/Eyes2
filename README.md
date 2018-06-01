@@ -4,7 +4,7 @@ A visualisation of Sleepy Studios servers and their locations
 
 ## Demo
 
-http://sleepystudios.net/eyes
+https://sleepystudios.net/eyes
 
 ## Waker
 
