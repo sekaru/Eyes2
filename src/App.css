@@ -31,7 +31,6 @@ small {
 .server {
   background-color: #fff;    
   display: flex;
-  align-items: center;  
   justify-content: space-between;
   padding: 1.25em 2em;
   width: 75vw;
@@ -58,6 +57,7 @@ small {
 
 .App-header {
   margin-top: 1em;
+  padding: 0 1em;
   height: auto;
   color: #eee;
   display: flex;
@@ -77,6 +77,10 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+  .App-header h1 {
+    font-size: 1.5em;
+  }
+
   .server {
     width: auto;
     border-radius: 0 !important;
