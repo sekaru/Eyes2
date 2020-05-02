@@ -1,11 +1,11 @@
 {
   "name": "eyes2",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
-    "inferno": "^5.0.6",
-    "inferno-scripts": "^6.3.2",
-    "lodash": "^4.17.10"
+    "inferno": "^7.4.2",
+    "inferno-scripts": "^7.0.4",
+    "lodash.sortby": "^4.7.0"
   },
   "scripts": {
     "start": "inferno-scripts start",
@@ -13,5 +13,11 @@
     "test": "inferno-scripts test --env=jsdom",
     "eject": "inferno-scripts eject"
   },
-  "homepage": "https://sleepystudios.net/eyes"
+  "homepage": "https://sleepystudios.net/eyes",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
