@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
-  background-color: rgb(28, 30, 45);  
+  font-family: 'Lato', sans-serif;
+  background-color: #111319;  
+  background-image: url('stardust.png');
 }
 
 a {
@@ -47,8 +52,8 @@ small {
   border-bottom-right-radius: 4px;
 }
 
-.server h2 {
-  font-size: 1.25em;
+.server h3 {
+  font-size: 1.25rem;
 }
 
 .odd {
@@ -70,15 +75,17 @@ small {
   margin-right: 1em;
 }
 
-h4 {
+h2 {
   margin-top: 0;
   color: #eee;
   text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.75em;
 }
 
 @media screen and (max-width: 768px) {
   .App-header h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   .server {
@@ -86,7 +93,7 @@ h4 {
     border-radius: 0 !important;
   }
 
-  .server h2 {
-    font-size: 1em;
+  .server h3 {
+    font-size: 1rem;
   }
 }

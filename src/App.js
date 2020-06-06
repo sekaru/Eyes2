@@ -32,7 +32,7 @@ class App extends Component {
           <h1>Sleepy Studios Eyes</h1>
         </header>
 
-        <h4>What's up?</h4>
+        <h2>What's up?</h2>
 
         <div id="servers">
           {sortBy(this.state.servers, "name").map((s, i) => (

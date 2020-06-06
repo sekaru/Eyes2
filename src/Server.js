@@ -41,16 +41,21 @@ export default class Server extends Component {
     return (
       <div className={this.props.index % 2 !== 0 ? "server odd" : "server"}>
         <div>
-          <h2>{this.props.data.name}</h2>
-          <p>{this.props.data.region}, {this.props.data.country}</p>
+          <h3>{this.props.data.name}</h3>
+          {this.props.data.region &&
+            <p>{this.props.data.region}, {this.props.data.country}</p>
+          }
+          {!this.props.data.region &&
+            <p>Unknown location</p>
+          }
           {this.props.data.environment !== "archived" &&
             <small>{this.props.data.environment}</small>
           }
         </div>
         
         <div style={{"text-align": "right"}}>
-          <h2>Status</h2>
-          <p style={{"color": this.statusColour()}}>{this.state.status}</p>
+          <h3>Status</h3>
+          <p style={{"color": this.statusColour(), "font-weight": this.state.statusID === 1 ? "bold" : "normal"}}>{this.state.status}</p>
         </div>
       </div>
     )
